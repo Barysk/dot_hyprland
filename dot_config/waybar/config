@@ -1,0 +1,39 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "height": 21, // Waybar height
+    "start_hidden": false,
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-right": ["tray", "hyprland/language", "pulseaudio", "battery", "clock"],
+    "hyprland/workspaces": {
+        "format": "{}",
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+	"tray": {
+		"icon-size": 16,
+		"spacing": 4
+	},
+    "clock": {
+		"interval": 1,
+        "format": "{:%A%e %B, %Y CE %H:%M:%S}"
+    },
+    "hyprland/language": {
+        "format": "{}",
+    },
+    "battery": {
+        "states": {
+            "warning": 50,
+            "critical": 25
+        },
+        "bat": "BAT0",
+        "format": "Bat {capacity}",
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "Vol {volume}",
+        "format-muted": "VolX{volume}",
+        //"on-click": "pavucontrol"
+    },
+}

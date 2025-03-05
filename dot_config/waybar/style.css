@@ -1,0 +1,69 @@
+* {
+    border: none;
+    border-radius: 0px;
+	color: white;
+    font-family: "IBM 3270";
+	font-weight: bold;
+    font-size: 12px;
+    min-height: 0px;
+}
+
+/* Whole bar */
+window#waybar {
+	background: #000000;
+}
+
+/* Workspaces tags */
+#workspaces {
+    background: black;
+}
+
+#workspaces button {
+    background: black;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+#workspaces button.active {
+    background: linear-gradient(180deg, #4d0000, #2d0000);
+	color: red;
+}
+
+/* Current window name */
+#window {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+/* Right elements */
+#clock, #battery, #language, #pulseaudio {
+    padding-right: 4px;
+    padding-left: 4px;
+	background: black;
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+    font-weight: bold;
+}
+
+#battery {
+}
+
+#battery.charging {
+    color: #0099ff;
+}
+
+#battery.warning {
+    color: #ff9900;
+}
+
+#battery.critical {
+    color: #ff5050;
+}
+
+#clock {
+    padding-right: 0px;
+}
