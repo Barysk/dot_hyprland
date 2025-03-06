@@ -1,7 +1,6 @@
 {
-    "layer": "top", // Waybar at top layer
+    "layer": "bottom", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
-    "height": 21, // Waybar height
     "start_hidden": false,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-right": ["tray", "hyprland/language", "pulseaudio", "battery", "clock"],
@@ -12,7 +11,7 @@
         "format": "{}"
     },
 	"tray": {
-		"icon-size": 16,
+		"icon-size": 14,
 		"spacing": 4
 	},
     "clock": {
@@ -24,8 +23,8 @@
     },
     "battery": {
         "states": {
-            "warning": 50,
-            "critical": 25
+            "warning": 66,
+            "critical": 33
         },
         "bat": "BAT0",
         "format": "Bat {capacity}",

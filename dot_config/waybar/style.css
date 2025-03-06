@@ -10,7 +10,7 @@
 
 /* Whole bar */
 window#waybar {
-	background: #000000;
+	background: linear-gradient(180deg, #000000, #000000);
 }
 
 /* Workspaces tags */
@@ -25,7 +25,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: linear-gradient(180deg, #4d0000, #2d0000);
+    background: linear-gradient(90deg, #000000, #4d0000, #000000);
 	color: red;
 }
 

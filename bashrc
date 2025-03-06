@@ -9,6 +9,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias startw='uwsm start default'
 
-#PS1='[\u@\h \W]\$ '
-PS1='[ \W ] > '
+PS1='\n  ┌─[ \[\033[36m\]\W\[\033[37m\] ]\n  └─> '
+
 . "$HOME/.cargo/env"
