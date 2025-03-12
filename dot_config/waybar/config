@@ -20,7 +20,7 @@
 	},
     "clock": {
 		"interval": 1,
-        "format": "{:%A%e %B, %Y CE %H:%M:%S}"
+        "format": "{:%A %d %B, %Y CE %H:%M:%S}"
     },
     "hyprland/language": {
         "format": "{}",

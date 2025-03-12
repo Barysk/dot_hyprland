@@ -1,1 +1,1 @@
-nwg-look: used for managing theme
+nwg-look: used for managing themes
