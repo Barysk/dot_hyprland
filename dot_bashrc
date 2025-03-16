@@ -11,4 +11,5 @@ alias startw='uwsm start default'
 
 PS1='\n  ┌─[ \[\033[36m\]\W\[\033[37m\] ]\n  └─> '
 
+# For rust
 . "$HOME/.cargo/env"
