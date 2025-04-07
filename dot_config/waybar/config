@@ -34,9 +34,7 @@
         "format": "Bat {capacity}",
     },
     "pulseaudio": {
-        //"scroll-step": 1,
         "format": "Vol {volume}",
         "format-muted": "VolX{volume}",
-        //"on-click": "pavucontrol"
     },
 }

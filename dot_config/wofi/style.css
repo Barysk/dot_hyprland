@@ -1,25 +1,32 @@
-*{
+* {
     border-radius: 0px;
     border: none;
 }
+
 window {
     font-size: 16px;
     font-family: "IBM 3270";
+	font-weight: bold;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+	
+	padding: 3px;
+	margin: 3px;
 }
 
 #entry {
     padding: 0.25em;
+	margin: 3px; 
+	color: gray;
 }
 
 #entry:selected {
-    background-color: rgba(77, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 3px 1px white;
 }
 
 #text:selected {
     color: white;
-	font-weight: bold;
 }
 
 #input {

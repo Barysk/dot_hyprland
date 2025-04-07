@@ -1,19 +1,14 @@
-/* :root {
-    --background-color: rgba(0,0,0,1);
-    --background-color-active: rgba(0,0,0,1);
-    --background-color-not-empty: rgba(0,0,0,1);
-    
-    --charging-color: #0099ff;
-    --warning-color: #ff9900;
-    --critical-color: #ff3030;
-} */
+@define-color panel_color rgba(0,0,0,0.7);
+@define-color empty_color DimGray;
+@define-color accent_color rgba(0,0,0,1);
+@define-color notification_color #800000;
+
 
 * {
     border: none;
     border-radius: 0px;
     font-family: "IBM 3270";
     font-size: 12px;
-    font-weight: bold;
     background: none;
     min-height: 0px;
     min-width: 0px;
@@ -22,41 +17,48 @@
 }
 
 /* All elements */
-#workspaces button, #window, #clock, #battery, #language, #pulseaudio {
+#workspaces button, #window, #clock, #battery, #language, #pulseaudio, #tray, #tray menu menuitem {
     margin-top: 3px;
     margin-bottom: 3px;
-    border-radius: 0px;
+    border-radius: 3px;
     padding-right: 6px;
     padding-left: 6px;
     margin-right: 3px;
     margin-left: 3px;
 	background: black;
     padding-top: 2px;
+    font-weight: bold;
+	color: white;
 }
 
 /* Whole window */
-window#waybar {
-    background: rgba(0,0,0,0.8);
+#waybar {
+    background: @panel_color;
 }
 
 /* Workspaces tags */
 #workspaces button {
-    background: rgba(40,0,0,1);
 }
 
 #workspaces button.empty {
     background: rgba(0,0,0,1);
+	color: @empty_color;
 }
 
 #workspaces button.active {
-    background: rgba(80,0,0,1);
+    background: @accent_color;
+	box-shadow: 0px 0px 3px 1px white;
 }
+
+#workspaces button.urgent {
+	box-shadow: 0px 0px 3px 1px @notification_color;
+} 
 
 /* Current window name */
 #window {
     padding-right: 8px;
     padding-left: 8px;
-    background: rgba(80,0,0,1);
+    background: @accent_color;
 }
 
 window#waybar.empty #window {
@@ -74,16 +76,30 @@ window#waybar.empty #window {
 }
 
 #battery.warning {
-    color: #ff9900;
+    box-shadow: 0px 0px 3px 1px #ff9900;
 }
 
 #battery.critical {
-    color: #ff5050;
+    box-shadow: 0px 0px 3px 1px #ff5050;
 }
 
 #battery.charging {
-    color: #0099ff;
+    box-shadow: 0px 0px 3px 1px #0099ff;
 }
 
 #clock {
+}
+
+
+#tray menu {
+	background-color: @panel_color;
+	color: white;
+    border-radius: 0px;
+	padding: 3px;
+	margin: 3px;
+}
+
+#tray menu menuitem:hover {
+	color: white;
+	box-shadow: 0px 0px 3px 1px white;
 }
