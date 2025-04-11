@@ -2,9 +2,7 @@
 @define-color empty_color DimGray;
 @define-color accent_color rgba(0,0,0,1);
 @define-color notification_color #800000;
-@define-color warning_color #ff9900;
-@define-color crit_color #ff5050;
-@define-color charging_color #0099ff;
+
 
 * {
     border: none;
@@ -71,22 +69,22 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-    box-shadow: 0px 0px 3px 1px @warning_color;
+    font-weight: bold;
 }
 
 #battery {
 }
 
 #battery.warning {
-    box-shadow: 0px 0px 3px 1px @warning_color;
+    box-shadow: 0px 0px 3px 1px #ff9900;
 }
 
 #battery.critical {
-    box-shadow: 0px 0px 3px 1px @crit_color;
+    box-shadow: 0px 0px 3px 1px #ff5050;
 }
 
 #battery.charging {
-    box-shadow: 0px 0px 3px 1px @charging_color;
+    box-shadow: 0px 0px 3px 1px #0099ff;
 }
 
 #clock {
