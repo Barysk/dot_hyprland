@@ -86,22 +86,22 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-  border-top: 2px solid @warning_color;
+  border-top: 2px solid @wb_warning_color;
 }
 
 #battery {
 }
 
 #battery.warning {
-  border-top: 2px solid @warning_color;
+  border-top: 2px solid @wb_warning_color;
 }
 
 #battery.critical {
-  border-top: 2px solid @crit_color;
+  border-top: 2px solid @wb_crit_color;
 }
 
 #battery.charging {
-  border-top: 2px solid @charging_color;
+  border-top: 2px solid @wb_charging_color;
 }
 
 #clock {
