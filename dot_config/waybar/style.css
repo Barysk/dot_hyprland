@@ -1,41 +1,56 @@
-@define-color panel_color rgba(0,0,0,0.6);
-@define-color empty_color DimGray;
-@define-color accent_color rgba(0,0,0,1);
-@define-color notification_color #800000;
-@define-color warning_color #ff9900;
-@define-color crit_color #ff5050;
-@define-color charging_color #0099ff;
+/* Base */
+@define-color wb_panel_color rgba(0,0,0,0.7);
+@define-color wb_font_color white;
+@define-color wb_inactive_color dimgray;
+@define-color wb_special_color gold;
 
+/* Coursor */
+@define-color wb_active_color white;
+@define-color wb_empty_color transparent;
+@define-color wb_notification_color #ff9900;
+
+/* Battery */
+@define-color wb_warning_color #ff9900;
+@define-color wb_crit_color #ff5050;
+@define-color wb_charging_color #0099ff;
+
+/* Init globals */
 * {
-    border: none;
-    border-radius: 0px;
-    font-family: "IBM 3270";
-    font-size: 12px;
-    background: none;
-    min-height: 0px;
-    min-width: 0px;
-    padding: 0px;
-    margin: 0px;
+  border: none;
+  border-radius: 0px;
+  font-family: "IBM 3270";
+  font-size: 12px;
+  background: none;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  margin: 0px;
+  transition: none;
+  text-shadow: none;
+}
+
+/* Panel */
+window#waybar {
+  background: @wb_panel_color;
 }
 
 /* All elements */
-#workspaces button, #window, #clock, #battery, #language, #pulseaudio, #tray, #tray menu menuitem {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border-radius: 3px;
-    padding-right: 6px;
-    padding-left: 6px;
-    margin-right: 3px;
-    margin-left: 3px;
-	background: black;
-    padding-top: 2px;
-    font-weight: bold;
-	color: white;
-}
+#workspaces button,
+#window,
+#clock,
+#battery,
+#language,
+#pulseaudio,
+#tray,
+#tray menu menuitem {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 
-/* Whole window */
-#waybar {
-    background: @panel_color;
+  border-top: 2px solid transparent; /* default value */
+  color: @wb_font_color;
+  font-weight: bold;
 }
 
 /* Workspaces tags */
@@ -43,65 +58,70 @@
 }
 
 #workspaces button.empty {
-    background: rgba(0,0,0,1);
-	color: @empty_color;
+  color: @wb_inactive_color;
 }
 
 #workspaces button.active {
-    background: @accent_color;
-	box-shadow: 0px 0px 3px 1px white;
+  border-top: 2px solid @wb_active_color;
 }
 
 #workspaces button.urgent {
-	box-shadow: 0px 0px 3px 1px @notification_color;
+  border-top: 2px solid @wb_notification_color;
+} 
+
+#workspaces button.special {
+  color: @wb_special_color;
 } 
 
 /* Current window name */
 #window {
-    padding-right: 8px;
-    padding-left: 8px;
-    background: @accent_color;
+
 }
 
 window#waybar.empty #window {
-    background: transparent;
 }
 
+/* Other */
 #pulseaudio {
 }
 
 #pulseaudio.muted {
-    box-shadow: 0px 0px 3px 1px @warning_color;
+  border-top: 2px solid @warning_color;
 }
 
 #battery {
 }
 
 #battery.warning {
-    box-shadow: 0px 0px 3px 1px @warning_color;
+  border-top: 2px solid @warning_color;
 }
 
 #battery.critical {
-    box-shadow: 0px 0px 3px 1px @crit_color;
+  border-top: 2px solid @crit_color;
 }
 
 #battery.charging {
-    box-shadow: 0px 0px 3px 1px @charging_color;
+  border-top: 2px solid @charging_color;
 }
 
 #clock {
 }
 
+#tray {
+  border-top: none;
+}
 
 #tray menu {
-	background-color: @panel_color;
-	color: white;
-    border-radius: 0px;
-	padding: 3px;
-	margin: 3px;
+  background-color: @wb_panel_color;
 }
 
-#tray menu menuitem:hover {
-	color: white;
-	box-shadow: 0px 0px 3px 1px white;
+#tray menuitem {
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
 }
+
+#tray menuitem:hover {
+  border-right: 2px solid @wb_active_color;
+  border-left: 2px solid @wb_active_color;
+}
+

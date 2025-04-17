@@ -2,14 +2,15 @@
     "layer": "bottom", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
     "start_hidden": false,
-	"height": 16,
+	"height": 18,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-right": ["tray", "hyprland/language", "pulseaudio", "battery", "clock"],
     "hyprland/workspaces": {
-        "format": "{}",
+        "format": "{name}",
+		"show-special": true,
 		"persistent-workspaces": {
-			"*": 9,
-		}
+			"*": 4,
+		},
     },
     "hyprland/window": {
         "format": "{}"
