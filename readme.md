@@ -61,6 +61,7 @@ SUPER+comma focuses left one
 
 SUPER+SHIFT+period moves current worspace to right monitor
 SUPER+SHIFT+comma moves current worspace to left monitor
+SUPER+SHIFT+TAB swap VISIBLE WORKSPACES between monitors
 
 BASICS______________________________________________________________________________________________
 
