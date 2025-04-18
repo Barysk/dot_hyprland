@@ -8,6 +8,7 @@
 @define-color wb_active_color white;
 @define-color wb_empty_color transparent;
 @define-color wb_notification_color #ff9900;
+@define-color wb_visible_color #444444;
 
 /* Battery */
 @define-color wb_warning_color #ff9900;
@@ -60,6 +61,10 @@ window#waybar {
 #workspaces button.empty {
   color: @wb_inactive_color;
 }
+
+#workspaces button.visible {
+  border-top: 2px solid @wb_visible_color;
+} 
 
 #workspaces button.active {
   border-top: 2px solid @wb_active_color;
