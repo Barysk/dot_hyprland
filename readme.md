@@ -12,8 +12,11 @@
   Add needed flag to Exec, like this ```Exec=vesktop --disable-gpu %U```
 * if no Nvidia => remove Nvidia fixes from hyrland.conf
 
+Here is an example how this "rice" looks
+![An image of how it looks](example.png)
+
 ```
-MASTER_LAYOUT_QUICK_GUIDE___________________________________________________________________________
+MASTER_LAYOUT_QUICK_GUIDE_______________________________________________________
 This config uses master layout
 
 +-----------------+--------+
@@ -42,11 +45,13 @@ SUPER+L increasing master area
 
 SUPER+SHIFT+ENTER to swap windows
 
-NAVIGATTION_________________________________________________________________________________________
+NAVIGATTION_____________________________________________________________________
 
 Navigating throught the worksapces is basic:
 SUPER+[workspace number 1..=9]
-SUPER+SHIFT+[workspace number 1..=9]    // is going to move active window to a chosen workspace
+
+this going to move active window to a chosen workspace:
+SUPER+SHIFT+[workspace number 1..=9]
 
 there is a one special worksapce:
 SUPER+S to open
@@ -54,7 +59,7 @@ SUPER+SHIFT+S to move something here
 
 SUPER+TAB to "alt-tab" between workspaces
 
-MULTIMONITOR________________________________________________________________________________________
+MULTIMONITOR____________________________________________________________________
 
 SUPER+period focuses monitor right of a current
 SUPER+comma focuses left one
@@ -63,7 +68,7 @@ SUPER+SHIFT+period moves current worspace to right monitor
 SUPER+SHIFT+comma moves current worspace to left monitor
 SUPER+SHIFT+TAB swap VISIBLE WORKSPACES between monitors
 
-BASICS______________________________________________________________________________________________
+BASICS__________________________________________________________________________
 
 default apps:
 terminal = kitty
