@@ -4,7 +4,7 @@
     "start_hidden": false,
 	"height": 18,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-right": ["tray", "hyprland/language", "pulseaudio", "battery", "clock"],
+    "modules-right": ["mpris", "tray", "hyprland/language", "wireplumber", "battery", "clock"],
     "hyprland/workspaces": {
         "format": "{name}",
 		"show-special": true,
@@ -15,6 +15,11 @@
     "hyprland/window": {
         "format": "{}"
     },
+	"mpris": {
+		"format": "{title}",
+		"format-paused": "{title}",
+		"max-length": 128,
+	},
 	"tray": {
 		"icon-size": 12,
 		"spacing": 12
@@ -24,17 +29,16 @@
         "format": "{:%A %d %B, %Y CE %H:%M:%S}"
     },
     "hyprland/language": {
-        "format": "{}",
+        "format": "{short}",
     },
     "battery": {
         "states": {
             "warning": 66,
             "critical": 33
         },
-        "bat": "BAT0",
         "format": "Bat {capacity}",
     },
-    "pulseaudio": {
+    "wireplumber": {
         "format": "Vol {volume}",
         "format-muted": "VolX{volume}",
     },

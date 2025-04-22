@@ -41,7 +41,8 @@ window#waybar {
 #clock,
 #battery,
 #language,
-#pulseaudio,
+#wireplumber,
+#mpris,
 #tray,
 #tray menu menuitem {
   padding-left: 6px;
@@ -87,11 +88,19 @@ window#waybar.empty #window {
 }
 
 /* Other */
-#pulseaudio {
+#wireplumber {
 }
 
-#pulseaudio.muted {
+#wireplumber.muted {
   border-top: 2px solid @wb_warning_color;
+}
+
+#mpris {
+  color: @wb_inactive_color;
+}
+
+#mpris.playing {
+  color: @wb_active_color;
 }
 
 #battery {
@@ -130,3 +139,8 @@ window#waybar.empty #window {
   border-left: 2px solid @wb_active_color;
 }
 
+tooltip label{
+  color: @wb_active_color;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px black;
+}
