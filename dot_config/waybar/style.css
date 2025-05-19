@@ -1,5 +1,5 @@
 /* Base */
-@define-color wb_panel_color rgba(0,0,0,0.8);
+@define-color wb_panel_color rgba(0,0,0,0.95);
 @define-color wb_font_color white;
 @define-color wb_inactive_color dimgray;
 @define-color wb_special_color gold;

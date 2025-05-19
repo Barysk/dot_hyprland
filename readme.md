@@ -53,16 +53,24 @@ SUPER+[workspace number 1..=9]
 this going to move active window to a chosen workspace:
 SUPER+SHIFT+[workspace number 1..=9]
 
+this going to move active window and focus to a chosen workspace:
+SUPER+ALT+[workspace number 1..=9]
+
 there is a one special worksapce:
 SUPER+S to open
 SUPER+SHIFT+S to move something here
 
 SUPER+TAB to "alt-tab" between workspaces
 
+GAPS____________________________________________________________________________
+
+SUPER+SHIFT+= sets gaps to 0 0
+SUPER+SHIFT+- sets gaps to default gaps
+
 MULTIMONITOR____________________________________________________________________
 
-SUPER+period focuses monitor right of a current
-SUPER+comma focuses left one
+SUPER+period focuses r monitor
+SUPER+comma focuses l moonitor
 
 SUPER+SHIFT+period moves current worspace to right monitor
 SUPER+SHIFT+comma moves current worspace to left monitor
@@ -76,9 +84,10 @@ file manager = pcmanfm
 menu = wofi
 lock = hyprlock
 bar = waybar
+browser = brave
 
 Hide/Show bar:
-SUPER+B
+SUPER+SHIFT+B
 
 Activate blue light filter:
 SUPER+SHIFT+N
@@ -97,6 +106,9 @@ SUPER+F
 
 Open application menu:
 SUPER+P
+
+Open browser:
+Super+B
 
 Screenshot:
 SUPER+ALT+S
