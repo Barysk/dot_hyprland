@@ -5,7 +5,7 @@
 	"height": 20,
 	"modules-left": ["hyprland/workspaces", "hyprland/window"],
 	"modules-center": [],
-	"modules-right": ["mpris", "tray", "hyprland/language", "network", "bluetooth", "wireplumber", "battery", "clock"],
+	"modules-right": ["mpris", "tray", "hyprland/language", "bluetooth", "wireplumber", "battery", "clock"],
 	"hyprland/workspaces": {
 		"format": "{name}",
 		"show-special": true,
@@ -24,14 +24,6 @@
 	"bluetooth": {
 		"format": "",
 		"format-on": "BTH",
-	},
-	"network": {
-		"format": "{ifname}",
-		"format-wifi": "WiFi",
-		"format-ethernet": "Eth",
-		"format-disconnected": "",
-		"tooltip-format": "{ifname}",
-		"tooltip-format-wifi": "{ifname} {essid}"
 	},
 	"tray": {
 		"icon-size": 12,
