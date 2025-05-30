@@ -27,7 +27,8 @@
 	},
 	"tray": {
 		"icon-size": 12,
-		"spacing": 12
+		"spacing": 12,
+		"reverse-direction": true
 	},
 	"clock": {
 		"interval": 1,
