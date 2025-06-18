@@ -43,18 +43,21 @@ SUPER+K to move up
 SUPER+H decreasing master area
 SUPER+L increasing master area
 
+SUPER+ALT+J resize window Y axis
+SUPER+ALT+K resize window Y axis
+
 SUPER+SHIFT+ENTER to swap windows
 
 NAVIGATTION_____________________________________________________________________
 
 Navigating throught the worksapces is basic:
-SUPER+[workspace number 1..=9]
+SUPER+[workspace number 0..=9] // NOTE: 0 means 10th workspace
 
 this going to move active window to a chosen workspace:
-SUPER+SHIFT+[workspace number 1..=9]
+SUPER+SHIFT+[workspace number 0..=9]
 
 this going to move active window and focus to a chosen workspace:
-SUPER+ALT+[workspace number 1..=9]
+SUPER+ALT+[workspace number 0..=9]
 
 there is a one special worksapce:
 SUPER+S to open
@@ -106,6 +109,9 @@ SUPER+F
 
 Open application menu:
 SUPER+P
+
+Open telegram:
+Super+T
 
 Open browser:
 Super+B

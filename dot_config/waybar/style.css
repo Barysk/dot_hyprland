@@ -19,8 +19,8 @@
 * {
   border: none;
   border-radius: 0px;
-  font-family: "IBM 3270";
-  font-size: 12px;
+  font-family: "M PLUS 2";
+  font-size: 9px;
   background: none;
   min-height: 0px;
   min-width: 0px;
@@ -51,7 +51,8 @@ window#waybar {
   padding-top: 0px;
   padding-bottom: 0px;
 
-  border-top: 2px solid transparent; /* default value */
+  border-top: 1px solid transparent; /* default value */
+  border-bottom: 1px solid transparent;
   color: @wb_font_color;
   font-weight: bold;
 }
@@ -65,15 +66,15 @@ window#waybar {
 }
 
 #workspaces button.visible {
-  border-top: 2px solid @wb_visible_color;
-} 
+  border-top: 1px solid @wb_visible_color;
+}
 
 #workspaces button.active {
-  border-top: 2px solid @wb_active_color;
+  border-top: 1px solid @wb_active_color;
 }
 
 #workspaces button.urgent {
-  border-top: 2px solid @wb_notification_color;
+  border-top: 1px solid @wb_notification_color;
 } 
 
 #workspaces button.special {
@@ -93,7 +94,7 @@ window#waybar.empty #window {
 }
 
 #wireplumber.muted {
-  border-top: 2px solid @wb_warning_color;
+  border-top: 1px solid @wb_warning_color;
 }
 
 #mpris {
@@ -108,15 +109,15 @@ window#waybar.empty #window {
 }
 
 #battery.warning {
-  border-top: 2px solid @wb_warning_color;
+  border-top: 1px solid @wb_warning_color;
 }
 
 #battery.critical {
-  border-top: 2px solid @wb_crit_color;
+  border-top: 1px solid @wb_crit_color;
 }
 
 #battery.charging {
-  border-top: 2px solid @wb_charging_color;
+  border-top: 1px solid @wb_charging_color;
 }
 
 #clock {
@@ -131,13 +132,13 @@ window#waybar.empty #window {
 }
 
 #tray menuitem {
-  border-right: 2px solid transparent;
-  border-left: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 #tray menuitem:hover {
-  border-right: 2px solid @wb_active_color;
-  border-left: 2px solid @wb_active_color;
+  border-right: 1px solid @wb_active_color;
+  border-left: 1px solid @wb_active_color;
 }
 
 tooltip label{
