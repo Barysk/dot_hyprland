@@ -88,7 +88,7 @@ BASICS__________________________________________________________________________
 default apps:
 terminal = kitty
 file manager = pcmanfm
-menu = wofi
+menu = tofi
 lock = hyprlock
 bar = waybar
 browser = brave

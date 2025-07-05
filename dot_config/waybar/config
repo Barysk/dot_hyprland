@@ -5,7 +5,7 @@
         "height": 18,
         "modules-left": ["hyprland/workspaces", "hyprland/window"],
         "modules-center": [],
-        "modules-right": ["mpris", "tray", "hyprland/language", "bluetooth", "wireplumber", "battery", "clock"],
+        "modules-right": ["tray", "hyprland/language", "bluetooth", "wireplumber", "battery", "clock"],
         "hyprland/workspaces": {
             "format": "{icon}",
             "format-icons": {

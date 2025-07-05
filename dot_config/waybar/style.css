@@ -1,11 +1,11 @@
 /* Base */
-@define-color wb_panel_color rgba(0,0,0,0.95);
-@define-color wb_font_color white;
-@define-color wb_inactive_color dimgray;
-@define-color wb_special_color gold;
+@define-color wb_panel_color #000000;
+@define-color wb_font_color #ffffff;
+@define-color wb_inactive_color #707070;
+@define-color wb_special_color #ffd700;
 
 /* Coursor */
-@define-color wb_active_color white;
+@define-color wb_active_color #ffffff;
 @define-color wb_empty_color transparent;
 @define-color wb_notification_color #ff9900;
 @define-color wb_visible_color #444444;
