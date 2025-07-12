@@ -4,8 +4,8 @@
         "start_hidden": false,
         "height": 18,
         "modules-left": ["hyprland/workspaces", "hyprland/window"],
-        "modules-center": [],
-        "modules-right": ["tray", "hyprland/language", "bluetooth", "wireplumber", "battery", "clock"],
+        "modules-center": ["clock"],
+        "modules-right": ["tray", "hyprland/language", "bluetooth", "wireplumber", "battery", "custom/date-module"],
         "hyprland/workspaces": {
             "format": "{icon}",
             "format-icons": {
@@ -42,9 +42,15 @@
             "spacing": 12,
             "reverse-direction": true
         },
+        "custom/date-module": {
+            "interval": 15,
+            "exec": "/home/bk/.config/waybar/modules/date",
+            "return-type": "text",
+            "tooltip": false
+        },
         "clock": {
             "interval": 1,
-            "format": "{:%A %d %B, %Y CE %H:%M:%S}"
+            "format": "{:%H:%M:%S}"
         },
         "hyprland/language": {
             "format": "{short}",

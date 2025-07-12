@@ -38,6 +38,7 @@ window#waybar {
 /* All elements */
 #workspaces button,
 #window,
+#custom-date-module,
 #clock,
 #battery,
 #language,
@@ -83,7 +84,6 @@ window#waybar {
 
 /* Current window name */
 #window {
-
 }
 
 window#waybar.empty #window {
@@ -118,6 +118,9 @@ window#waybar.empty #window {
 
 #battery.charging {
   border-top: 1px solid @wb_charging_color;
+}
+
+#custom-date-module {
 }
 
 #clock {
