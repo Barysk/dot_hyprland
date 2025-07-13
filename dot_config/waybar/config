@@ -3,7 +3,7 @@
         "position": "top", // Waybar at the bottom of your screen
         "start_hidden": false,
         "height": 18,
-        "modules-left": ["hyprland/workspaces", "hyprland/window"],
+        "modules-left": ["hyprland/workspaces"],
         "modules-center": ["clock"],
         "modules-right": ["tray", "hyprland/language", "bluetooth", "wireplumber", "battery", "custom/date-module"],
         "hyprland/workspaces": {
@@ -26,6 +26,7 @@
             }
         },
         "hyprland/window": {
+            "separate-outputs": false,
             "format": "{}"
         },
         "mpris": {
@@ -44,7 +45,7 @@
         },
         "custom/date-module": {
             "interval": 15,
-            "exec": "/home/bk/.config/waybar/modules/date",
+            "exec": "$HOME/.config/waybar/modules/date",
             "return-type": "text",
             "tooltip": false
         },
