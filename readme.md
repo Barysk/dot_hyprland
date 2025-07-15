@@ -2,9 +2,6 @@
 
 * nwg-look: used for managing themes
 * Theme things: papirus-icon-theme, materia-gtk-theme, kvantum
-* /etc/environment
-    * QT_QPA_PLATFORMTHEME=qt6ct
-    * QT_STYLE_OVERRIDE=kvantum
 * chrome://flags in your chromium based browser set to wayland
 * if electron application still flickers even after fixes provided in hyprland's guide, set a
   --disable-gpu flag, my case:
