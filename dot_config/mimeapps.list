@@ -1,0 +1,17 @@
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+text/plain=nvim.desktop
+image/png=imv-dir.desktop
+image/jpeg=imv-dir.desktop
+image/webp=imv-dir.desktop
+inode/directory=pcmanfm.desktop
+application/pdf=org.pwmt.zathura.desktop
+
+[Added Associations]
+text/plain=nvim.desktop;
+image/png=imv-dir.desktop;
+image/jpeg=imv-dir.desktop;
+image/webp=imv-dir.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+
+[Removed Associations]

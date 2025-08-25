@@ -66,10 +66,10 @@ SUPER+SHIFT+S to move something here
 
 SUPER+TAB to "alt-tab" between workspaces
 
-GAPS____________________________________________________________________________
+TURN_ON_FOCUS_HIGHLIGHT_________________________________________________________
 
-SUPER+SHIFT+= sets gaps to 0 0
-SUPER+SHIFT+- sets gaps to default gaps
+SUPER+MINUS to turn heighlight off
+SUPER+SHIFT+MINUS to heightligh on
 
 MULTIMONITOR____________________________________________________________________
 
