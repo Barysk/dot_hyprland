@@ -38,6 +38,7 @@ window#waybar {
 /* All elements */
 #workspaces button,
 #custom-date-module,
+#window,
 #clock,
 #battery,
 #language,

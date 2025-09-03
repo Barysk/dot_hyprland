@@ -61,34 +61,34 @@ this going to move active window and focus to a chosen workspace:
 SUPER+ALT+[workspace number 0..=9]
 
 there is a one special worksapce:
-SUPER+S to open
+SUPER+S       to open
 SUPER+SHIFT+S to move something here
 
 SUPER+TAB to "alt-tab" between workspaces
 
 TURN_ON_FOCUS_HIGHLIGHT_________________________________________________________
 
-SUPER+MINUS to turn heighlight off
+SUPER+MINUS       to turn heighlight off
 SUPER+SHIFT+MINUS to heightligh on
 
 MULTIMONITOR____________________________________________________________________
 
 SUPER+period focuses r monitor
-SUPER+comma focuses l moonitor
+SUPER+comma  focuses l moonitor
 
 SUPER+SHIFT+period moves current worspace to right monitor
-SUPER+SHIFT+comma moves current worspace to left monitor
-SUPER+SHIFT+TAB swap VISIBLE WORKSPACES between monitors
+SUPER+SHIFT+comma  moves current worspace to left monitor
+SUPER+SHIFT+TAB    swap VISIBLE WORKSPACES between monitors
 
 BASICS__________________________________________________________________________
 
 default apps:
-terminal = kitty
+terminal     = kitty
 file manager = pcmanfm
-menu = tofi
-lock = hyprlock
-bar = waybar
-browser = brave
+menu         = tofi
+lock         = hyprlock
+bar          = waybar
+browser      = brave
 
 Hide/Show bar:
 SUPER+SHIFT+B
@@ -97,7 +97,7 @@ Activate blue light filter:
 SUPER+SHIFT+N
 
 Open terminal:
-SUPER+enter
+SUPER+ENTER
 
 Kill active window:
 SUPER+Q
@@ -118,7 +118,10 @@ Open browser:
 Super+B
 
 Screenshot:
-SUPER+ALT+S
+SUPER+PRINTSCREEN
+
+ColorPicker:
+SUPER+SHIFT+PRINTSCREEN
 
 Lock screen:
 SUPER+escape
