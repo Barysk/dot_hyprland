@@ -63,7 +63,7 @@ case "$1" in
 	;;
 	collect) collect
 	;;
-	*) echo 'Usage: hyprconf deploy|collect'
+	*) echo 'Usage: autoconf deploy|collect'
 	;;
 esac
 
