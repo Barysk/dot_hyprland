@@ -13,6 +13,6 @@ main :: proc() {
 	day := tm.tm_mday
 	weekday := tm.tm_wday
 
-	libc.printf("%d年%d月%d日 (%s)\n", year, month, day, days[weekday])
+	libc.printf("%d年%d月%d日 [ %s ]\n", year, month, day, days[weekday])
 }
 

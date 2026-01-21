@@ -1,11 +1,11 @@
 {
 	"layer": "bottom",
-	"position": "top",
+	"position": "bottom",
 	"start_hidden": false,
-	"height": 18,
+	"height": 20,
 	"modules-left": ["hyprland/workspaces", "hyprland/window"],
-	"modules-center": ["clock"],
-	"modules-right": ["tray", "bluetooth", "wireplumber", "battery", "custom/date-module"],
+	"modules-center": [],
+	"modules-right": ["tray", "bluetooth", "wireplumber", "battery", "custom/date-module", "clock", "custom/branding-module"],
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
@@ -59,6 +59,12 @@
 	"custom/date-module": {
 		"interval": 15,
 		"exec": "$HOME/.config/waybar/modules/date",
+		"return-type": "text",
+		"tooltip": false
+	},
+	"custom/branding-module": {
+		"interval": "once",
+		"exec": "$HOME/.config/waybar/modules/branding",
 		"return-type": "text",
 		"tooltip": false
 	},
