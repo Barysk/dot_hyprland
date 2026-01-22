@@ -11,12 +11,26 @@ export BROWSER="brave"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias cal='cal -m'
 alias nv='nvim .'
 alias startw='uwsm start default'
+alias whatfonts='fc-list : family | sort | uniq'
 
 alias archwiki="$BROWSER /usr/share/doc/arch-wiki/html/en/Main_page.html"
 
 PS1='\n  ┌─[ \[\033[36m\]\W\[\033[37m\] ]\n  └─> '
 
-. "$HOME/.cargo/env"
-export PATH="$PATH:$HOME/.dotnet/tools"
+rand() {
+	if [[ -z $1 || -z $2 ]]; then
+		echo "provide min and max"
+		return 1
+	fi
+	min=$1
+	max=$2 
+	if [[ $min -gt $max ]]; then
+		min=$2
+		max=$1
+	fi
+	echo $(($RANDOM%($max-$min+1)+$min))
+	return 0
+}

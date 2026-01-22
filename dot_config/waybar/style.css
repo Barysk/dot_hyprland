@@ -1,5 +1,5 @@
 /* Base */
-@define-color wb_panel_color #000000;
+@define-color wb_panel_color rgba(0, 0, 0, 1.0);
 @define-color wb_font_color #ffffff;
 @define-color wb_inactive_color #707070;
 @define-color wb_special_color #ffd700;
@@ -8,7 +8,7 @@
 @define-color wb_active_color #ffffff;
 @define-color wb_empty_color transparent;
 @define-color wb_notification_color #ff9900;
-@define-color wb_visible_color #444444;
+@define-color wb_visible_color #707070;
 
 /* Battery */
 @define-color wb_warning_color #ff9900;
@@ -33,7 +33,6 @@
 /* Panel */
 window#waybar {
 	background: @wb_panel_color;
-
 }
 
 /* left elements */
@@ -61,7 +60,7 @@ window#waybar {
 #tray,
 #tray menu menuitem {
 	padding-left: 4px;
-	padding-right: 0px;
+	padding-right: 4px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 
