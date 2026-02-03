@@ -1,5 +1,5 @@
 /* Base */
-@define-color wb_panel_color rgba(0, 0, 0, 1.0);
+@define-color wb_panel_color rgba(0, 0, 0, 0.7);
 @define-color wb_font_color #ffffff;
 @define-color wb_inactive_color #707070;
 @define-color wb_special_color #ffd700;
@@ -27,7 +27,7 @@
 	padding: 0px;
 	margin: 0px;
 	transition: none;
-	text-shadow: none;
+	text-shadow: black 0px 0px 2px;
 }
 
 /* Panel */
