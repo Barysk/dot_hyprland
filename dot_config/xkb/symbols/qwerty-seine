@@ -5,7 +5,7 @@ xkb_symbols "qwerty-seine" {
 
 	name[Group1]= "English (Seine QWERTY)";
 
-	key <TLDE> { [ dollar,       asciitilde, dead_grave,      dead_tilde       ] };
+	key <TLDE> { [ dollar,       asciitilde,   dead_grave,      dead_tilde     ] };
 
 	key <AE01> { [ plus,         1                                             ] };
 	key <AE02> { [ bracketleft,  2                                             ] };
@@ -17,8 +17,8 @@ xkb_symbols "qwerty-seine" {
 	key <AE08> { [ braceright,   8                                             ] };
 	key <AE09> { [ bracketright, 9,          dead_grave                        ] };
 	key <AE10> { [ asterisk,     0                                             ] };
-	key <AE11> { [ percent,      exclam                                        ] };
-	key <AE12> { [ numbersign,   grave,      dead_tilde                        ] };
+	key <AE11> { [ percent,      numbersign                                    ] };
+	key <AE12> { [ exclam,       grave,        dead_tilde                      ] };
 
 	key <AD01> { [ q,            Q                                             ] };
 	key <AD02> { [ w,            W                                             ] };
