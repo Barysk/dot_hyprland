@@ -17,6 +17,7 @@ Here is an example how this "rice" looks
 ![An image of how it looks](example.png)
 
 ```
+[Deprecated: now this config uses scrolling layout]
 MASTER_LAYOUT_QUICK_GUIDE_______________________________________________________
 This config uses master layout
 

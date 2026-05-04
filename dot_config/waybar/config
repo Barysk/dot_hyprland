@@ -1,9 +1,10 @@
 {
-	"layer": "top",
+	"exclusive": false,
+	"layer": "bottom",
 	"position": "bottom",
 	"start_hidden": false,
 	"modules-left": ["hyprland/workspaces", "hyprland/window"],
-	"modules-right": ["tray", "bluetooth", "wireplumber", "battery", "custom/date-module", "clock", "custom/branding-module"],
+	"modules-right": ["tray", "bluetooth", "wireplumber", "battery", "custom/date-module", "clock"], //, "custom/branding-module"
 	"no-center": true,
 	"expand-left": true,
 	"hyprland/workspaces": {
@@ -30,12 +31,12 @@
 		"rotate": 0,
 		"swap-icon-label": false,
 		"format": "{class}[ {title} ]",
-		"separate-outputs": true,
+		"separate-outputs": true
 	},
 	"clock": {
 		"rotate": 0,
 		"interval": 1,
-		"format": "{:%H:%M:%S}"
+		"format": "{:%H時%M分%S秒}"
 	},
 	"tray": {
 		"rotate": 0,
@@ -45,17 +46,17 @@
 	},
 	"hyprland/language": {
 		"rotate": 0,
-		"format": "{}",
+		"format": "{}"
 	},
 	"bluetooth": {
 		"rotate": 0,
 		"format": "",
-		"format-on": "BTH",
+		"format-on": "BTH"
 	},
 	"wireplumber": {
 		"rotate": 0,
 		"format": "音量 {volume}",
-		"format-muted": "消音 {volume}",
+		"format-muted": "消音 {volume}"
 	},
 	"battery": {
 		"rotate": 0,
@@ -63,7 +64,7 @@
 			"warning": 66,
 			"critical": 33
 		},
-		"format": "バッテリー {capacity}",
+		"format": "バッテリー {capacity}"
 	},
 	"custom/date-module": {
 		"rotate": 0,
@@ -78,5 +79,5 @@
 		"exec": "$HOME/.config/waybar/modules/branding",
 		"return-type": "text",
 		"tooltip": false
-	},
+	}
 }

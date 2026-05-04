@@ -16,12 +16,9 @@ case $choice in
 		hyprctl reload
 		;;
 	External\ Only)
-		hyprctl reload
 		hyprctl keyword monitor $default_monitor,disable
-		hyprctl keyword monitor ,preferred,auto,1,transform,0
 		;;
 	Mirror)
-		hyprctl reload
 		hyprctl keyword monitor $default_monitor,highres@highrr,0x0,1.0
 		hyprctl keyword monitor ,preferred,auto,1,mirror,$default_monitor
 		;;

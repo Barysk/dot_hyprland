@@ -1,8 +1,9 @@
 /* Base */
-@define-color wb_panel_color rgba(0, 0, 0, 0.7);
-@define-color wb_font_color #ffffff;
-@define-color wb_inactive_color #707070;
-@define-color wb_special_color #ffd700;
+@define-color wb_panel_color rgba(0, 0, 0, 0.0);
+@define-color wb_font_color rgba(255, 255, 255, 0.7);
+@define-color wb_inactive_color rgba(127, 127, 127, 0.3);
+@define-color wb_special_color rgba(255, 196, 0, 0.7);
+@define-color wb_shadow_color rgba(0, 0, 0, 0.5);
 
 /* Coursor */
 @define-color wb_active_color #ffffff;
@@ -19,15 +20,15 @@
 * {
 	border: none;
 	border-radius: 0px;
-	font-family: "serif";
-	font-size: 12px;
+	font-family: "IBM Plex Sans JP";
+	font-size: 10px;
 	background: none;
 	min-height: 0px;
 	min-width: 0px;
 	padding: 0px;
 	margin: 0px;
 	transition: none;
-	text-shadow: black 0px 0px 2px;
+	text-shadow: @wb_shadow_color 0px 0px 2px;
 }
 
 /* Panel */
