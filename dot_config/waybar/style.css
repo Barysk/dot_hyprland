@@ -1,7 +1,8 @@
 /* Base */
 @define-color wb_panel_color rgba(0, 0, 0, 0.0);
+@define-color wb_tray_color rgba(0, 0, 0, 1.0);
 @define-color wb_font_color rgba(255, 255, 255, 0.7);
-@define-color wb_inactive_color rgba(127, 127, 127, 0.3);
+@define-color wb_inactive_color rgba(127, 127, 127, 0.0);
 @define-color wb_special_color rgba(255, 196, 0, 0.7);
 @define-color wb_shadow_color rgba(0, 0, 0, 0.5);
 
@@ -28,7 +29,6 @@
 	padding: 0px;
 	margin: 0px;
 	transition: none;
-	text-shadow: @wb_shadow_color 0px 0px 2px;
 }
 
 /* Panel */
@@ -37,8 +37,19 @@ window#waybar {
 }
 
 /* left elements */
+
+/* right elements */
+#custom-branding-module,
+#custom-date-module,
+#clock,
+#battery,
+#language,
 #workspaces button,
-#window {
+#window,
+#wireplumber,
+#bluetooth,
+#tray,
+#tray menu menuitem {
 	padding-left: 8px;
 	padding-right: 8px;
 	padding-top: 0px;
@@ -48,27 +59,7 @@ window#waybar {
 	border-bottom: 1px solid transparent;
 	color: @wb_font_color;
 	font-weight: bold;
-}
-
-/* right elements */
-#custom-branding-module,
-#custom-date-module,
-#clock,
-#battery,
-#language,
-#wireplumber,
-#bluetooth,
-#tray,
-#tray menu menuitem {
-	padding-left: 4px;
-	padding-right: 4px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-
-	border-top: 1px solid transparent; /* default value */
-	border-bottom: 1px solid transparent;
-	color: @wb_font_color;
-	font-weight: bold;
+	text-shadow: @wb_shadow_color 0px 0px 2px;
 }
 
 /* Workspaces tags */
@@ -77,10 +68,12 @@ window#waybar {
 
 #workspaces button.empty {
 	color: @wb_inactive_color;
+	text-shadow: @wb_inactive_color 0px 0px 2px;
 }
 
 #workspaces button.visible {
 	border-bottom: 1px solid @wb_visible_color;
+	text-shadow: @wb_shadow_color 0px 0px 2px;
 }
 
 #workspaces button.active {
@@ -125,11 +118,12 @@ window#waybar {
 }
 
 #tray {
-	border-bottom: none;
+	border: none;
 }
 
 #tray menu {
-	background-color: @wb_panel_color;
+	background-color: @wb_tray_color;
+	border-radius: 4px;
 }
 
 #tray menuitem {
